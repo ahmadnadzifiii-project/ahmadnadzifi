@@ -20,10 +20,7 @@
       content="Official website of Ahmad Nadzifi, a technology student, developer, educator, and aspiring leader from Probolinggo, Indonesia. Discover his profile, education, achievements, leadership, and projects."
     />
 
-    <meta
-      name="author"
-      content="Ahmad Nadzifi"
-    />
+    <meta name="author" content="Ahmad Nadzifi" />
 
     <meta
       name="robots"
@@ -37,10 +34,7 @@
     />
 
     <!-- Open Graph -->
-    <meta
-      property="og:type"
-      content="website"
-    />
+    <meta property="og:type" content="website" />
 
     <meta
       property="og:title"
@@ -62,12 +56,19 @@
       content="Ahmad Nadzifi"
     />
 
+    <meta property="og:locale" content="id_ID" />
+
     <meta
-      property="og:locale"
-      content="id_ID"
+      property="og:image"
+      content="https://ahmadnadzifi.vercel.app/images/hero.png"
     />
 
-    <!-- Twitter / Social Sharing -->
+    <meta
+      property="og:image:alt"
+      content="Ahmad Nadzifi - Official Personal Profile"
+    />
+
+    <!-- Twitter Card -->
     <meta
       name="twitter:card"
       content="summary_large_image"
@@ -83,6 +84,11 @@
       content="Building Technology, Leading People, Creating Impact."
     />
 
+    <meta
+      name="twitter:image"
+      content="https://ahmadnadzifi.vercel.app/images/hero.png"
+    />
+
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
@@ -93,6 +99,10 @@
           "@id": "https://ahmadnadzifi.vercel.app/#person",
           "name": "Ahmad Nadzifi",
           "url": "https://ahmadnadzifi.vercel.app/",
+          "image": [
+            "https://ahmadnadzifi.vercel.app/images/about.png",
+            "https://ahmadnadzifi.vercel.app/images/hero.png"
+          ],
           "description": "Ahmad Nadzifi is a technology student, developer, educator, and aspiring leader from Probolinggo, East Java, Indonesia. Interested in technology, leadership, education, and digital innovation.",
           "address": {
             "@type": "PostalAddress",
@@ -101,16 +111,16 @@
             "addressCountry": "ID"
           },
           "knowsAbout": [
-  "Information Technology",
-  "Web Development",
-  "Programming",
-  "Digital Innovation",
-  "Leadership",
-  "Education"
-],
-"sameAs": [
-  "https://www.instagram.com/ahmad_nadzifi/"
-],
+            "Information Technology",
+            "Web Development",
+            "Programming",
+            "Digital Innovation",
+            "Leadership",
+            "Education"
+          ],
+          "sameAs": [
+            "https://www.instagram.com/ahmad_nadzifi/"
+          ],
           "mainEntityOfPage": {
             "@id": "https://ahmadnadzifi.vercel.app/#website"
           }
@@ -131,8 +141,16 @@
     </script>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
 
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
@@ -142,6 +160,10 @@
 
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+
+    <script
+      type="module"
+      src="/src/main.jsx"
+    ></script>
   </body>
 </html>
