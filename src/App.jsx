@@ -11,7 +11,15 @@ const iconMap = {
   code: Code2, app: MonitorSmartphone, bot: Bot, teach: BookOpen,
   language: Languages, mic: Mic2, users: Users, cpu: Cpu, presentation: Presentation,
 }
-const navItems = [['About', 'about'], ['Education', 'education'], ['Expertise', 'skills'], ['Achievements', 'achievements'], ['Projects', 'projects'], ['Gallery', 'gallery']]
+const navItems = [
+  ['About', 'about'],
+  ['Education', 'education'],
+  ['Expertise', 'skills'],
+  ['Achievements', 'achievements'],
+  ['Leadership', 'organization'],
+  ['Projects', 'projects'],
+  ['Gallery', 'gallery']
+]
 const reveal = { hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0, transition: { duration: .65, ease: [.22, 1, .36, 1] } } }
 
 function SectionHeading({ eyebrow, title, description, light = false }) {
@@ -158,7 +166,7 @@ function App() {
               <img src={item.src} alt={item.alt} loading="lazy" /><span><ImageIcon size={17} /> {item.alt}</span>
             </motion.button>)}
           </div>
-          <div className="gallery-hint">GANTI FOTO CONTOH DENGAN DOKUMENTASI ASLI AHMAD NADZIFI</div>
+        
         </div>
       </section>
 
